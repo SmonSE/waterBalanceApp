@@ -1,16 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--InterfaceController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller identifier="InterfaceController" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WaterBalance_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="1hf-zp-GNQ">
+                            <items>
+                                <button alignment="left" title="-" id="fQa-By-gww">
+                                    <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                    <connections>
+                                        <action selector="didTrapWaterMinusButton" destination="AgC-eL-Hgc" id="UU7-AY-CST"/>
+                                    </connections>
+                                </button>
+                                <button height="45" alignment="center" verticalAlignment="center" title="💧" id="jEf-sR-979">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                                    <connections>
+                                        <action selector="waterActionView" destination="AgC-eL-Hgc" id="MHB-5f-bhL"/>
+                                    </connections>
+                                </button>
+                                <label alignment="center" verticalAlignment="center" text="0" id="uV5-aG-fP1">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                </label>
+                                <button alignment="right" title="+" id="W55-aj-UiG">
+                                    <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                    <connections>
+                                        <action selector="didTrapWaterPlusButton" destination="AgC-eL-Hgc" id="S9J-qf-MLz"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                        <group width="1" alignment="left" id="bau-PS-1xS">
+                            <items>
+                                <button alignment="left" title="-" id="dtT-7t-7gv">
+                                    <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                    <connections>
+                                        <action selector="didTrapCoffeeMinusButton" destination="AgC-eL-Hgc" id="3Wv-Hq-EmL"/>
+                                    </connections>
+                                </button>
+                                <button height="45" alignment="center" verticalAlignment="center" title="☕️" id="7cJ-uQ-cFq">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                                    <connections>
+                                        <action selector="coffeeActionView" destination="AgC-eL-Hgc" id="ehy-cZ-02a"/>
+                                    </connections>
+                                </button>
+                                <label alignment="center" verticalAlignment="center" text="0" id="JBc-ai-l0f">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                </label>
+                                <button alignment="right" title="+" id="l5d-kc-LAa">
+                                    <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                    <connections>
+                                        <action selector="didTrapCoffeePlusButton" destination="AgC-eL-Hgc" id="50y-am-8hr"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                        <group width="1" alignment="left" id="dfF-dL-a1N">
+                            <items>
+                                <button alignment="left" title="-" id="5Yn-li-ahz">
+                                    <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                    <connections>
+                                        <action selector="didTrapTeaMinusButton" destination="AgC-eL-Hgc" id="VhB-hF-Htz"/>
+                                    </connections>
+                                </button>
+                                <button height="45" alignment="center" verticalAlignment="center" title="🍵" id="Zsd-NB-sHP">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                                    <connections>
+                                        <action selector="teaActionView" destination="AgC-eL-Hgc" id="QyL-CS-Wj7"/>
+                                    </connections>
+                                </button>
+                                <label alignment="center" verticalAlignment="center" text="0" id="hAM-Jx-za7">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                </label>
+                                <button alignment="right" title="+" id="8Eb-Im-TvY">
+                                    <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                    <connections>
+                                        <action selector="didTrapTeaPlusButton" destination="AgC-eL-Hgc" id="gXr-8F-rbA"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                        <label width="1" height="30" alignment="left" id="XNF-9j-Yhl"/>
+                        <label alignment="left" text="Score" id="mZm-Lf-CFE">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <textField width="1" alignment="center" isAccessibilityElement="NO" placeholder="daily water needs" enabled="NO" id="bF4-VB-hbK">
+                            <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textField>
+                        <textField width="1" alignment="center" placeholder="total water state" enabled="NO" id="W2w-Mh-qER" userLabel="Total Water State">
+                            <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textField>
+                        <label alignment="left" text="My Profile" id="FPu-WW-Ogq">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <textField width="1" alignment="left" placeholder="Age in years" id="z8z-IM-zYN" userLabel="AgeTextField">
+                            <connections>
+                                <action selector="ageAction:" destination="AgC-eL-Hgc" id="Hip-Zy-QaK"/>
+                            </connections>
+                        </textField>
+                        <textField width="1" alignment="left" placeholder="Weight in kg" id="49g-ve-h3X" userLabel="WeightTextField">
+                            <connections>
+                                <action selector="weightAction:" destination="AgC-eL-Hgc" id="caC-QM-2R5"/>
+                            </connections>
+                        </textField>
+                        <textField width="1" alignment="left" placeholder="Water default 150ml" id="gyY-hm-xR0" userLabel="waterSize">
+                            <connections>
+                                <action selector="waterSizeAction:" destination="AgC-eL-Hgc" id="U9r-ly-YRG"/>
+                            </connections>
+                        </textField>
+                        <textField width="1" alignment="left" placeholder="Coffee default 150ml" id="w2Y-yK-j6m" userLabel="coffeeSize">
+                            <connections>
+                                <action selector="coffeeSizeAction:" destination="AgC-eL-Hgc" id="yCE-VN-toN"/>
+                            </connections>
+                        </textField>
+                        <textField width="1" alignment="left" placeholder="Tea default 150ml" id="JP3-5T-NRX" userLabel="teaSize">
+                            <connections>
+                                <action selector="teaSizeAction:" destination="AgC-eL-Hgc" id="Xq1-Li-OEu"/>
+                            </connections>
+                        </textField>
+                        <button width="1" height="50" alignment="left" title="💾" id="l4E-2T-cHj" userLabel="StoreButton">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                            <connections>
+                                <action selector="storeButton" destination="AgC-eL-Hgc" id="SfQ-wf-G1R"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="❌" id="Efq-vY-v8d" userLabel="RefreshButton">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                            <connections>
+                                <action selector="refreshButton" destination="AgC-eL-Hgc" id="l3u-yr-B14"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="ageTextFieldOutlet" destination="z8z-IM-zYN" id="Qay-4W-h56"/>
+                        <outlet property="coffeeScoreLabel" destination="JBc-ai-l0f" id="nGy-QK-e3z"/>
+                        <outlet property="coffeeSizeOutlet" destination="w2Y-yK-j6m" id="G8W-ZF-GNE"/>
+                        <outlet property="dailyWaterTextFieldOutlet" destination="bF4-VB-hbK" id="zO0-7j-xGP"/>
+                        <outlet property="teaScoreLabel" destination="hAM-Jx-za7" id="6Vy-tS-rIa"/>
+                        <outlet property="teaSizeOutlet" destination="JP3-5T-NRX" id="eCT-B0-P9b"/>
+                        <outlet property="totalWaterStateTextFieldOutlet" destination="W2w-Mh-qER" id="WeF-a3-dkf"/>
+                        <outlet property="waterScoreLabel" destination="uV5-aG-fP1" id="AN1-7L-Lch"/>
+                        <outlet property="waterSizeOutlet" destination="gyY-hm-xR0" id="76R-ws-ezB"/>
+                        <outlet property="weightTextFieldOutlet" destination="49g-ve-h3X" id="QqM-om-3wc"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="181"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -32,16 +185,30 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WaterBalance_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="WaterBalance_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="220" y="974"/>
+        </scene>
+        <!--ThirdInterfaceController-->
+        <scene sceneID="BBG-Ow-czo">
+            <objects>
+                <controller identifier="ThirdInterfaceController" id="R8p-Qy-03g" customClass="ThirdInterfaceController" customModule="WaterBalance_WatchKit_Extension">
+                    <items>
+                        <imageView width="160" height="1" alignment="center" verticalAlignment="center" id="qPq-El-LuS"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageView" destination="qPq-El-LuS" id="r6U-vY-VAT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="911" y="71"/>
         </scene>
     </scenes>
 </document>

@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D1FF9D0238DCDFD00F211A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1FF9CF238DCDFD00F211A3 /* Assets.xcassets */; };
 		2D89856B2381D8EE007AA81F /* WaterBalance WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2D89856A2381D8EE007AA81F /* WaterBalance WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2D8985712381D8EE007AA81F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D89856F2381D8EE007AA81F /* Interface.storyboard */; };
-		2D8985732381D8F3007AA81F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8985722381D8F3007AA81F /* Assets.xcassets */; };
 		2D89857A2381D8F3007AA81F /* WaterBalance WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2D8985792381D8F3007AA81F /* WaterBalance WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2D89857F2381D8F3007AA81F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D89857E2381D8F3007AA81F /* InterfaceController.swift */; };
 		2D8985812381D8F3007AA81F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8985802381D8F3007AA81F /* ExtensionDelegate.swift */; };
 		2D8985832381D8F3007AA81F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8985822381D8F3007AA81F /* NotificationController.swift */; };
 		2D8985852381D8F4007AA81F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8985842381D8F4007AA81F /* Assets.xcassets */; };
+		2D8C16AA2382F23900A3D606 /* ThirdInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8C16A92382F23900A3D606 /* ThirdInterfaceController.swift */; };
+		2D93B87A2386DC6C0049B3B6 /* TechRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D93B8792386DC6C0049B3B6 /* TechRecipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +62,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2D1FF9CF238DCDFD00F211A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../test/test WatchKit App/Assets.xcassets"; sourceTree = "<group>"; };
 		2D8985662381D8EE007AA81F /* WaterBalance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterBalance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D89856A2381D8EE007AA81F /* WaterBalance WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WaterBalance WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8985702381D8EE007AA81F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		2D8985722381D8F3007AA81F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D8985742381D8F3007AA81F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D8985792381D8F3007AA81F /* WaterBalance WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WaterBalance WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D89857E2381D8F3007AA81F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,8 @@
 		2D8985842381D8F4007AA81F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D8985862381D8F4007AA81F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D8985872381D8F4007AA81F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		2D8C16A92382F23900A3D606 /* ThirdInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdInterfaceController.swift; sourceTree = "<group>"; };
+		2D93B8792386DC6C0049B3B6 /* TechRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechRecipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				2D89856F2381D8EE007AA81F /* Interface.storyboard */,
-				2D8985722381D8F3007AA81F /* Assets.xcassets */,
 				2D8985742381D8F3007AA81F /* Info.plist */,
+				2D1FF9CF238DCDFD00F211A3 /* Assets.xcassets */,
 			);
 			path = "WaterBalance WatchKit App";
 			sourceTree = "<group>";
@@ -118,11 +122,13 @@
 			isa = PBXGroup;
 			children = (
 				2D89857E2381D8F3007AA81F /* InterfaceController.swift */,
+				2D8C16A92382F23900A3D606 /* ThirdInterfaceController.swift */,
 				2D8985802381D8F3007AA81F /* ExtensionDelegate.swift */,
 				2D8985822381D8F3007AA81F /* NotificationController.swift */,
 				2D8985842381D8F4007AA81F /* Assets.xcassets */,
 				2D8985862381D8F4007AA81F /* Info.plist */,
 				2D8985872381D8F4007AA81F /* PushNotificationPayload.apns */,
+				2D93B8792386DC6C0049B3B6 /* TechRecipe.swift */,
 			);
 			path = "WaterBalance WatchKit Extension";
 			sourceTree = "<group>";
@@ -234,7 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D8985732381D8F3007AA81F /* Assets.xcassets in Resources */,
+				2D1FF9D0238DCDFD00F211A3 /* Assets.xcassets in Resources */,
 				2D8985712381D8EE007AA81F /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,8 +261,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D8985832381D8F3007AA81F /* NotificationController.swift in Sources */,
+				2D93B87A2386DC6C0049B3B6 /* TechRecipe.swift in Sources */,
 				2D8985812381D8F3007AA81F /* ExtensionDelegate.swift in Sources */,
 				2D89857F2381D8F3007AA81F /* InterfaceController.swift in Sources */,
+				2D8C16AA2382F23900A3D606 /* ThirdInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
